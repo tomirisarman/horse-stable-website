@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1F1F1F;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+header{
+    background: linear-gradient(0deg, rgba(43, 43, 43, 0.8), rgba(43, 43, 43, 0.8)), url('../assets/images/header.jpg') no-repeat top / cover;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+.box{
+    width: 1400px;
+    margin: 0 auto;
+}
+.box_fluid{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.nav{
+    float: right;
+}
+
+.nav ul li{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+.nav a{
+    font-size: 30px;
+}
+
+.logo{
+    width: 5vw;
+}
+.titles{
+
+    text-align: center;
+    padding: 100px;
+
+}
+.title{
+    color: #D4A268;
+    font-size: 50px;
+}
+.title_lg{
+    font-size: 150px;
+    font-family: serif;
+}
+.contact_us{
+
+    font-size: 36px;
+    background-color: #1F1F1F;
+    color: #fff;
+    border: 2px solid #D4A268;
+    padding: 25px;
+}
+#about_p{
+    background: linear-gradient(0deg, rgba(43, 43, 43, 0.8), rgba(43, 43, 43, 0.8)), url('../assets/images/section1.jpg');
+
+}
+.poroda, .konushna{
+    padding-top: 200px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.poroda div, .konushna div{
+    display: inline-block;
+    vertical-align: top;
+}
+.poroda img, .konushna img{
+    width: 500px;
+}
+.desc_text{
+    width: 800px;
+    background-color: #353535;
+    text-transform: none;
+    padding: 30px;
+
+
+}
+.desc h2{
+    font-size: 40px;
+}
+.desc h1, .konushna h1{
+    font-size: 48px;
+    color: #D4A268;
+    font-weight: normal;
+}
+
+.konushna h1{
+    text-align: center;
+}
+.catalog{
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.catalog div{
+    margin: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(43, 43, 43, 0.9)), url("../assets/images/slider1.png") no-repeat top / cover;
+}
+.catalog div:hover{
+    /*background: url("{{asset('assets/images/slider1.png')}}") no-repeat top / cover;*/
+    background: url("../assets/images/slider1.png") no-repeat top / cover;
+}
+.sale_text{
+    padding: 400px 150px 25px 150px;
+    font-size: 48px;
+}
+.desc_text a{
+    color: #D4A268;
+}
+
+.konushna .desc_text{
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+}
+
+.contact_text, .send_contacts{
+    display: inline-block;
+    vertical-align: top;
+}
+.contact_text{
+    padding: 100px 0;
+}
+.contact_title{
+    font-size: 48px;
+    color: #D4A268;
+    font-weight: normal;
+    text-align: center;
+}
+.send_contacts{
+    background-color: #353535;
+    text-transform: none;
+    padding: 30px;
+    margin: 50px;
+}
+form div{
+    padding: 30px;
+}
+
+.send_contacts input,
+.send_contacts label{
+    font-size: 34px;
+}
+.contact_text h3{
+    font-size: 36px;
+    font-weight: normal;
+}
