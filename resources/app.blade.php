@@ -97,7 +97,7 @@
             </div>
         </div>
     </div>
-
+</section>
 {{--<section id="for_sale">--}}
     {{--<div class="catalog">--}}
         {{--<div>--}}

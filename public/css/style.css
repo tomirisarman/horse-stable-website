@@ -6,14 +6,19 @@ body{
     color: #fff;
     text-transform: uppercase;
 }
+button, input[type="submit"]{
+    text-transform: uppercase;
+}
 header{
     background: linear-gradient(0deg, rgba(43, 43, 43, 0.8), rgba(43, 43, 43, 0.8)), url('../assets/images/header.jpg') no-repeat top / cover;
 }
+
 a{
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
 }
+
 .box{
     width: 1400px;
     margin: 0 auto;
@@ -35,7 +40,9 @@ a{
 .nav a{
     font-size: 30px;
 }
-
+.nav a:hover{
+    text-decoration: underline;
+}
 .logo{
     width: 5vw;
 }
@@ -61,12 +68,15 @@ a{
     border: 2px solid #D4A268;
     padding: 25px;
 }
+.contact_us:hover{
+    background-color: #494949;
+}
 #about_p{
     background: linear-gradient(0deg, rgba(43, 43, 43, 0.8), rgba(43, 43, 43, 0.8)), url('../assets/images/section1.jpg');
 
 }
 .poroda, .konushna{
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 100px;
     position: relative;
 }
@@ -105,15 +115,17 @@ a{
 }
 .catalog div{
     margin: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(43, 43, 43, 0.9)), url("../assets/images/slider1.png") no-repeat top / cover;
+    /*background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(43, 43, 43, 0.9)), url("../assets/images/slider1.png") no-repeat top / cover;*/
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(43, 43, 43, 0.9)), no-repeat top / cover;
 }
 .catalog div:hover{
     /*background: url("{{asset('assets/images/slider1.png')}}") no-repeat top / cover;*/
-    background: url("../assets/images/slider1.png") no-repeat top / cover;
+    /*background: url("../assets/images/slider1.png") no-repeat top / cover;*/
+    background: no-repeat top / cover;
 }
 .sale_text{
-    padding: 400px 150px 25px 150px;
-    font-size: 48px;
+    padding: 250px 150px 10px 150px;
+    font-size: 40px;
 }
 .desc_text a{
     color: #D4A268;
@@ -153,9 +165,96 @@ form div{
     font-size: 34px;
 }
 .contact_text h3{
-    font-size: 36px;
+    font-size: 32px;
     font-weight: normal;
 }
+.langs a{
+    font-size: 14px;
+    vertical-align: top;
+    padding: 0 20px;
+}
+form label{
+    float: left;
+}
+form input{
+    float: right;
+}
+/*стили для слайдера*/
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.slider__item {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.slider__control {
+    position: absolute;
+    top: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .5);
+}
+
+.slider__control_show {
+    display: flex;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
+.slider__control_left {
+    left: 0;
+}
+
+.slider__control_right {
+    right: 0;
+}
+
+.slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_right::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider__item>div {
+    line-height: 250px;
+    font-size: 100px;
+    text-align: center;
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 480px){
 

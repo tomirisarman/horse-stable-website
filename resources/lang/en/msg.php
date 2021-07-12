@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'menu_poroda'       => "breed",
+    'menu_contact'      => "contacts",
+    'menu_konushna'     => 'stable',
+    'menu_sale'         => 'on sale',
+    "menu_ahalteki"     => "Akhal-Teke horses",
+    "contact_us"        => "contact us",
+    "about_text"        => "The Akhal-Teke breed of horses is valuable for its rarity, excellent conformation, excellent working properties. She appeared in the Turkmen Teke tribe, which owns the best horse tribes. The name of the horse comes from the Akhal oasis, where the most numerous tribe of this species lived. This is the oldest of the cultivated breeds, which influenced many breeds - Arabian, Thoroughbred, and others. These graceful and hardy animals are called golden horses, heavenly argamaks, Akhal-Teke or simply Teke. It belongs, along with the thoroughbred horse and Arabian, to the number of purebred breeds, since it is a reference riding horse and has not crossed with other breeds for 5000 years. Well adapted to dry hot climates and perfectly acclimatized in other conditions.",
+    "more_info"         => "more info",
+    "tel"               => "tel",
+    "address"           => "address",
+    "mail"              => "e-mail",
+    "city"              => "Almaty",
+    "ur_name"           => "Name",
+    "ur_mail"           => "E-mail",
+    "ur_tel"            => "Phone",
+    "male"              => "Stallions",
+    "female"            => "Mares",
+    "train"             => "Training",
+    "young"             => "Foals",
+    "child"             => "Child",
+
+    "name"              => "name",
+    "category"          => "category",
+    "color"             => "color",
+    "year"              => "year of birth",
+    "size"              => "size",
+    "line"              => "line",
+    ];
